@@ -1,0 +1,23 @@
+~ benas
+Lentelė: Tai yra Beno namas
+=> END
+
+~ erikas
+Lentelė: Tai yra Eriko namas
+=> END
+
+~ kavinė
+Lentelė: Kavinė "Penkta pėda"
+=> END
+
+~ kirpykla
+Lentelė: Kirpykla "Pukuotos žirklės"
+=> END
+
+~ open
+if not has_met_Erikas:
+	Benas: Reiktų pradžioj su Eriku susitikti
+else:
+	if not has_accepted_quest:
+		Benas: Gal reikėtų pražioj padėti draugui...	
+=> END!

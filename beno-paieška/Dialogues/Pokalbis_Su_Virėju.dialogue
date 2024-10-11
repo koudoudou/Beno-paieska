@@ -1,0 +1,53 @@
+~ start
+if second_Rugile:
+	=> second
+if not has_met_Gabija:
+	Gabija: Sveikas, Benai, ko norėtum užsisakyti?
+	Benas: Dabar nealkanas, bet turiu problema.
+=> start2
+
+~ start2
+if has_met_Rugile:
+	Gabija: Kas atsitiko?
+	- Erikas pametė savo grybų krepšelį.
+		Gabija: Su Rugile pakalbėk apie tai.
+		=> start2
+	- Katik nepavyko su Rugile pakalbėti
+		Gabija: Šiandien ji labai pikta ant manes, bet nežinau kodėl.
+		Gabija: Aš daug darbų turiu kavinėje, gal galėtum sužinoti iš kur visas jos pyktis?
+		Benas: Gerai.	
+		=> start2
+	- Turiu jau eiti
+		set has_met_Gabija = true
+		=> END	
+else:
+	Gabija: Kas atsitiko?
+	- Erikas pametė savo grybų krepšelį.
+		Gabija: Rugilė turėtų apie tai žinoti.
+		=> start2
+	- Nenoriu apie tai kalbėti
+		Gabija: Gerai, bet žinok aš visad išklausysiu tave
+		Benas: Dėkui, Gabija
+		set has_met_Gabija = true
+		=> END
+
+
+
+~ second
+if not second_Gabija:
+	Gabija: Kiek šiandien užsakymų reikės padaryti...
+	Benas: Labas, Gabija. Sužinojau kodėl pyksta Rugilė.
+	Gabija: Kodėl?
+	Benas: Tu nepadarei jai jos mėgstamiausio sumuštinio.
+	Gabija: Jetus, dėl tokių mažų dalykų supykti...
+	Benas: Man reikia sužinoti kur Eriko grybų krepšelis ir vienintelė kuri žino yra Rugile
+	Benas: Ar galėtum padaryti Rugilei sumuštinį, kad nustotų pykti ir galėtų pasakyti kur yra krepšelis?
+	Gabija: Nors ir labai neturiu laiko, bet manau spėsiu.
+	: *Daro sumuštinį*
+	Gabija: Prašom
+	Benas: Ačiū tau
+	set has_sandwich = true
+	set second_Gabija = true
+	=> END
+else:
+	Gabija: Katik padarė didelį užsakymą, dabar negaliu kalbėti.

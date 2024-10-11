@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddfa3qu7l7k2d"]
+
+[ext_resource type="Script" path="res://gd files/ending_scene.gd" id="1_281pu"]
+[ext_resource type="Texture2D" uid="uid://byrnt8agogwht" path="res://Sprites/top-down-town-preview.png" id="2_ia4ve"]
+
+[node name="Ending_Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_281pu")
+
+[node name="Top-down-town-preview" type="Sprite2D" parent="."]
+position = Vector2(575, 322.5)
+scale = Vector2(2.98958, 2.05312)
+texture = ExtResource("2_ia4ve")
+
+[node name="MainMenu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 527.0
+offset_right = 378.0
+offset_bottom = 558.0
+scale = Vector2(1.36576, 1.57421)
+text = "Grįžti į pgr. menu"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 733.0
+offset_top = 527.0
+offset_right = 741.0
+offset_bottom = 535.0
+scale = Vector2(1.66836, 1.57303)
+text = "Išeiti iš žaidimo"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = 319.0
+offset_top = 184.0
+offset_right = 683.0
+offset_bottom = 214.0
+scale = Vector2(1.43744, 1.96881)
+text = "  Sveikiname įveikus žaidimą ,,Beno paieška\"!!!"
+fit_content = true
+
+[node name="ColorRect" type="ColorRect" parent="RichTextLabel"]
+z_index = -1
+layout_mode = 0
+offset_left = -61.9155
+offset_top = -5.07921
+offset_right = 459.084
+offset_bottom = 34.9208
+color = Color(0, 0, 0, 0.619608)
+
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://ct3ixn5or80fi"
+path="res://.godot/imported/Lentelės.dialogue-b7402141eeefed179795ac6a55086212.tres"
+
+[deps]
+
+source_file="res://Dialogues/Lentelės.dialogue"
+dest_files=["res://.godot/imported/Lentelės.dialogue-b7402141eeefed179795ac6a55086212.tres"]
+
+[params]
+
+defaults=true

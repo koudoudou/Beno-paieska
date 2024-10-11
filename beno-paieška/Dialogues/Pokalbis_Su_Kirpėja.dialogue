@@ -1,0 +1,51 @@
+~ start
+if has_sandwich:
+	=> third
+if has_met_Gabija:
+	=> second
+
+if not has_met_Rugile:
+	Rugilė: Ta karvė jau...
+	Rugilė: Uoj [[sveikas|labas]], Benai, ar atėjai apsikirpti?
+	Benas: Ne šį kartą, Rugile.
+	Benas: Erikas pametė savo grybų krepšelį, gal netyčia jis paliko krepšelį čia?
+	Rugilė: Kas pametė visus savo krepšelius tai Gabija, kiek galima...
+	Benas: *Nieko nepavyks sužinoti kol ji įtūžusi yra...*
+	Benas: *Gal pradžioj užkalbinsiu vyrėją*
+else:
+	Rugilė: askdjagsdajk
+	Benas: *Ji vis dar pikta, reiktų su virėja pakalbėti*
+set has_met_Rugile = true
+=> END
+
+~ second
+if not second_Rugile:
+	Benas: Rugile, kodel tu taip pyksti ant Gabijos?
+	Rugilė: kodėl taip pykstu...KODĖL TAIP PYKSTU?!
+	Rugilė: Aš ją visus metus nemokamai kirpau, o ji man pagailėjo mano mėgstamiausią sumuštinį padaryti...
+	Benas: Supratau, bet Gabija taip pat minėjo, kad žinai kur Eriko grybų krepšelis.
+	Rugilė: O ko tik ta Gabija nekalba, ir vėl jinai su savo...
+	Benas: *Rugilė vėl įsiūto...*
+else:
+	Benas: *Rugilė per daug pikta pokalbiui*
+set second_Rugile = true
+=> END
+
+~ third
+if not third_Rugile:
+	Benas: Rugile!
+	Benas: Rugile!
+	Rugilė: Taip, Benai.
+	Benas: Gabija atsiprašymui padarė tau sumuštinį.
+	: *Paduoda sumuštini Gabijai*
+	Rugilė: Uoj kaip skanu...
+	Benas: Rugile, kaip ir minėjau anksčiau aš ieškau Eriko grybų krepšelio.
+	Rugilė: Taip, Taip... Girdėjau kai viena klientė sakė, kad matė kažkokį krepšelį netoli salono.
+	Rugilė: Kažką minėjo apie medžių ratą
+	set third_Rugile = true
+	set know_location = true
+	=> END
+else:
+	Rugilė: Mmmh...Koks skanus sumuštinis...
+	=> END
+

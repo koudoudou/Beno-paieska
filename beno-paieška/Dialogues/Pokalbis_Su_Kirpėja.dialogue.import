@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://cya5jefjdnpnc"
+path="res://.godot/imported/Pokalbis_Su_Kirpėja.dialogue-c51ec815c5b17793631260b2be37abb4.tres"
+
+[deps]
+
+source_file="res://Dialogues/Pokalbis_Su_Kirpėja.dialogue"
+dest_files=["res://.godot/imported/Pokalbis_Su_Kirpėja.dialogue-c51ec815c5b17793631260b2be37abb4.tres"]
+
+[params]
+
+defaults=true

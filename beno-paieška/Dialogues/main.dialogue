@@ -1,0 +1,50 @@
+~ start
+if not has_met_Erikas:
+	Benas: Labas, Erikai!
+	Erikas: Labas...Benai...
+	Benas: Kas atsitiko?
+	Erikas: Aš pamečiau savo grybų krepšelį :(
+	Benas: O NE!
+	Erikas: Ar gali man jį surasti?
+	- Žinoma!
+		set has_accepted_quest = true
+		Erikas: Žinojau, kad bėdoje galėsiu pasikliauti tavimi!
+		Benas: Einu iki miško kirpyklos, gal jie žinos kažką apie tai...
+		Erikas: Protingai sakai, sėkmės paieškose!
+	- Ne, dabar esu užsiemęs
+		Erikas: Gaila...
+	
+if has_met_Erikas:
+	if has_accepted_quest:	
+		Erikas: Ar radai mano krepšelį?
+		if has_mushroom_basket == true:
+			- Taip, radau!
+			Benas: Štai tavo krepšelis!
+			Erikas: Dėkui, taip ir žinojau, kad tau pavyks!
+			Benas: Nėr už ką, drauge
+			Erikas: Dabar galiu eiti mamai padaryti valgyti
+			Benas: Perduok jai nuo manęs linkėjimus
+			Erikas: Būtinai, o dabar jau turiu eiti. Iki!
+			Benas: Iki pasimatymo!
+			set has_won = true
+			
+		else:
+			- Dar neradau
+			Erikas: Tu gali, aš tikiu tavimi!
+	else:
+		Erikas: Ar jau gali man padėti?
+		- Taip, padėsiu tau rasti krepšelį
+			set has_accepted_quest = true
+			Erikas: Žinojau, kad bėdoje galėsiu pasikliauti tavimi!
+			Benas: Einu iki miško kirpyklos, gal jie žinos kažką apie tai...
+			Erikas: Protingai sakai, sėkmės paieškose!
+		- Dar negaliu
+			Erikas: Supratau :(
+
+
+set has_met_Erikas = true
+=> END
+
+
+
+

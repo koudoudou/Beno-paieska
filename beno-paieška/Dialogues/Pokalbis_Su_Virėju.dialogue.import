@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://b603taoebj3x4"
+path="res://.godot/imported/Pokalbis_Su_Virėju.dialogue-f9fbd16e6bf38f61ec841e317f13d175.tres"
+
+[deps]
+
+source_file="res://Dialogues/Pokalbis_Su_Virėju.dialogue"
+dest_files=["res://.godot/imported/Pokalbis_Su_Virėju.dialogue-f9fbd16e6bf38f61ec841e317f13d175.tres"]
+
+[params]
+
+defaults=true
