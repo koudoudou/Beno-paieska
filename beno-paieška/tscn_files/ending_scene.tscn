@@ -27,6 +27,7 @@ scale = Vector2(1.36576, 1.57421)
 text = "Grįžti į pgr. menu"
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 733.0
 offset_top = 527.0
 offset_right = 741.0

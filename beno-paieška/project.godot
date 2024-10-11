@@ -23,6 +23,10 @@ State="*res://gd files/state.gd"
 
 general/states=["State"]
 
+[dotnet]
+
+project/assembly_name="Beno paieška"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
